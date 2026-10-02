@@ -1,0 +1,17 @@
+{
+  "name": "resonances",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass sass/main.scss:css/style.css --no-source-map --style=compressed",
+    "sass:watch": "sass sass/main.scss css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}
