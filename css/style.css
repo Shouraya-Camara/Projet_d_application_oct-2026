@@ -1,3 +1,168 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*
+Le reset CSS.
+
+Les styles du body.
+
+Les styles généraux des titres (h1, h2, h3).
+
+Les styles des paragraphes (p).
+
+Les styles des liens (a).
+
+Les styles des listes (ul, ol).
+
+Les styles généraux des boutons et des champs de formulaire.
+
+
+*/
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: #3A3950;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+h1 {
+  color: #1C1B2E;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+}
+
+h2 {
+  color: #1C1B2E;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+h3 {
+  color: #1C1B2E;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+small {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/*
+
+Header
+
+Navigation principale
+
+Main
+
+Sidebar
+
+Footer
+
+Container
+
+Grilles et colonnes
+
+*/
+/*
+Cards
+
+Boutons spécifiques
+
+Formulaires
+
+Menu
+
+Barre de recherche
+
+Galerie d'images
+
+Alertes
+
+Pagination
+
+Badges
+
+*/
+/*
+
+Un menu ouvert ou fermé.
+
+Un bouton désactivé.
+
+Un élément actif.
+
+Un formulaire invalide.
+
+Un message de succès.
+
+Un élément sélectionné.
+
+Un élément masqué.
+
+*/
+/*
+Les couleurs principales et secondaires.
+
+Les couleurs de fond.
+
+Les couleurs des textes.
+
+Les polices.
+
+Les tailles de texte.
+
+Les espacements.
+
+Les bordures.
+
+Les ombres.
+
+Les thèmes clair et sombre
+
+*/
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+
+// Remise à 0 de la page 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Images fluides
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Héritage de la typographie dans les formulaires
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// Boutons
+button {
+  cursor: pointer;
+}
