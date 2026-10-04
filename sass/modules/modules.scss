@@ -18,3 +18,75 @@ Pagination
 Badges
 
 */
+
+
+
+// MODULE : BOUTONS
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-small);
+
+  padding: 12px 20px;
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-h2);
+  line-height: var(--line-height-small);
+
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease,
+              color 0.2s ease,
+              border-color 0.2s ease;
+}
+
+// Variante principale
+.btn-primary {
+  color: var(--color-stage-text-light);
+  background-color: var(--color-action-primary);
+}
+
+// Variante secondaire
+.btn-secondary {
+  color: var(--color-stage-text-light);
+  background-color: var(--color-text-primary);
+}
+
+// Variante contour
+.btn-outline {
+  color: var(--color-text-primary);
+  background-color: var(--color-background-page);
+  border-color: var(--color-text-primary);
+}
+
+// Variante claire
+.btn-light {
+  color: var(--color-text-primary);
+  background-color: var(--color-background-page);
+}
+
+// Tailles
+.btn-small {
+  padding: 8px 12px;
+}
+
+.btn-medium {
+  padding: 12px 20px;
+}
+
+.btn-large {
+  padding: 16px 24px;
+}
+
+// Bouton avec icône
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-small);
+}

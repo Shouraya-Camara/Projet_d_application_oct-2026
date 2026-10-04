@@ -1,8 +1,9 @@
 // 1. Abstracts : variables et mixins
 @use "abstracts";
 
-// 2. Base : reset et typographie
+// 2. Base : reset et typographie 
 @use "base/reset";
+@use "base/tokens";
 @use "base/base";
 
 // 3. Layout : structure générale
@@ -16,3 +17,4 @@
 
 // 6. Theme : couleurs et thèmes des scènes
 @use "theme/theme";
+

@@ -28,6 +28,52 @@ button {
   cursor: pointer;
 }
 
+:root {
+  --color-text-primary: #1C1B2E;
+  --color-text-body: #3A3950;
+  --color-text-secondary: #6B6A80;
+  --color-background-page: #FFFFFF;
+  --color-background-alternate: #F4F5F7;
+  --color-border-default: #E3E5EA;
+  --color-border-input: #CBD0D8;
+  --color-action-primary: #C8402A;
+  --color-action-primary-hover: #A3311F;
+  --color-accent: #F4C95D;
+  --color-error: #B3261E;
+  --color-stage-lac: #1F4E8C;
+  --color-stage-foret: #2F6B3A;
+  --color-stage-kiosque: #B87A1E;
+  --color-stage-text-light: #FFFFFF;
+  --color-stage-text-dark: #1C1B2E;
+  --font-family-primary: "Inter", sans-serif;
+  --font-size-small: 14px;
+  --font-size-body: 16px;
+  --font-size-intro: 20px;
+  --font-size-h3: 28px;
+  --font-size-h2: 40px;
+  --font-size-h1: 56px;
+  --line-height-small: 22px;
+  --line-height-body: 26px;
+  --line-height-intro: 32px;
+  --line-height-h3: 36px;
+  --line-height-h2: 48px;
+  --line-height-h1: 64px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-section: 40px;
+  --spacing-major: 64px;
+  --radius-small: 6px;
+  --radius-medium: 12px;
+  --radius-pill: 999px;
+  --font-weight-h1: 800;
+  --font-weight-h2: 700;
+  --font-weight-h3: 700;
+  --font-weight-intro: 400;
+  --font-weight-body: 400;
+  --font-weight-small: 400;
+}
+
 /*
 Le reset CSS.
 
@@ -107,6 +153,230 @@ Container
 Grilles et colonnes
 
 */
+.l-components-page {
+  padding-block: var(--spacing-major);
+}
+
+.l-components-intro {
+  margin-bottom: var(--spacing-major);
+}
+
+.l-components-eyebrow {
+  color: var(--color-action-primary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.l-components-section {
+  padding-block: var(--spacing-major);
+  border-top: 1px solid var(--color-border-default);
+}
+.l-components-section > p {
+  margin-block: var(--spacing-medium) var(--spacing-large);
+}
+.l-components-section > h3 {
+  margin-block: var(--spacing-large);
+}
+
+.l-token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--spacing-large);
+  margin-top: var(--spacing-large);
+}
+
+.l-token-color {
+  min-width: 0;
+}
+.l-token-color h3 {
+  margin-top: var(--spacing-small);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+.l-token-color p {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.l-color-swatch {
+  width: 100%;
+  height: 100px;
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-medium);
+}
+
+.l-type-example {
+  padding-block: var(--spacing-large);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.l-token-label {
+  margin-bottom: var(--spacing-medium);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.l-type-intro {
+  font-size: var(--font-size-intro);
+  line-height: var(--line-height-intro);
+}
+
+.l-spacing-example {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-large);
+  margin-block: var(--spacing-large);
+}
+.l-spacing-example p {
+  flex: 0 0 150px;
+  font-size: var(--font-size-small);
+}
+
+.l-spacing-bar {
+  width: var(--spacing-major);
+  background-color: var(--color-action-primary);
+  border-radius: var(--radius-small);
+}
+
+.l-spacing-small {
+  height: var(--spacing-small);
+}
+
+.l-spacing-medium {
+  height: var(--spacing-medium);
+}
+
+.l-spacing-large {
+  height: var(--spacing-large);
+}
+
+.l-spacing-section {
+  height: var(--spacing-section);
+}
+
+.l-spacing-major {
+  height: var(--spacing-major);
+}
+
+@media (max-width: 768px) {
+  .l-components-page {
+    padding-block: var(--spacing-large);
+  }
+  .l-components-section {
+    padding-block: var(--spacing-large);
+  }
+  .l-spacing-example {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--spacing-small);
+  }
+}
+.l-components-page {
+  background-color: var(--color-background-page);
+}
+
+.l-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-large);
+}
+
+.l-header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-small);
+}
+
+.l-components-hero {
+  padding-block: var(--spacing-major);
+  background-color: var(--color-background-alternate);
+}
+
+.l-breadcrumb {
+  margin-bottom: var(--spacing-small);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.l-components-hero h1 {
+  margin-bottom: var(--spacing-small);
+}
+
+.l-components-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-large);
+  padding-block: var(--spacing-large);
+  border-bottom: 1px solid var(--color-border-default);
+}
+.l-components-nav a {
+  color: var(--color-action-primary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-h2);
+  text-decoration: none;
+}
+
+.l-components-section {
+  padding-block: var(--spacing-major);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.l-components-section > h2 {
+  padding-bottom: var(--spacing-small);
+  border-bottom: 2px solid var(--color-action-primary);
+}
+
+.l-components-section > p {
+  margin-block: var(--spacing-medium) var(--spacing-large);
+}
+
+@media (max-width: 768px) {
+  .l-header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .l-components-nav {
+    gap: var(--spacing-medium);
+  }
+}
+.l-component-row {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  align-items: center;
+  gap: var(--spacing-large);
+  padding-block: var(--spacing-large);
+}
+
+.l-component-label {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-h2);
+}
+
+.l-component-examples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-medium);
+}
+
+.l-dark-preview {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-large);
+  background-color: var(--color-text-primary);
+  border-radius: var(--radius-small);
+}
+
+@media (max-width: 768px) {
+  .l-component-row {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-medium);
+  }
+}
 /*
 Cards
 
@@ -127,6 +397,62 @@ Pagination
 Badges
 
 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-small);
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-h2);
+  line-height: var(--line-height-small);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary {
+  color: var(--color-stage-text-light);
+  background-color: var(--color-action-primary);
+}
+
+.btn-secondary {
+  color: var(--color-stage-text-light);
+  background-color: var(--color-text-primary);
+}
+
+.btn-outline {
+  color: var(--color-text-primary);
+  background-color: var(--color-background-page);
+  border-color: var(--color-text-primary);
+}
+
+.btn-light {
+  color: var(--color-text-primary);
+  background-color: var(--color-background-page);
+}
+
+.btn-small {
+  padding: 8px 12px;
+}
+
+.btn-medium {
+  padding: 12px 20px;
+}
+
+.btn-large {
+  padding: 16px 24px;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-small);
+}
+
 /*
 
 Un menu ouvert ou fermé.
@@ -144,6 +470,37 @@ Un élément sélectionné.
 Un élément masqué.
 
 */
+.btn-primary:hover {
+  background-color: var(--color-action-primary-hover);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-text-body);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-background-alternate);
+}
+
+.btn-light:hover {
+  background-color: var(--color-background-alternate);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.btn:disabled,
+.btn.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn.is-loading {
+  cursor: wait;
+}
+
 /*
 Les couleurs principales et secondaires.
 

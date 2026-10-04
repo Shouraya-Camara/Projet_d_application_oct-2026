@@ -3,11 +3,962 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Composants</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">    
+
+    <title>Document</title>
 </head>
 <body>
-    
+
+  <!-- ===================================
+       HEADER
+  ==================================== -->
+
+  <header class="site-header">
+    <div class="l-container l-header-inner">
+
+      <a href="index.html" class="site-logo">
+        <span class="site-logo-icon" aria-hidden="true">◉</span>
+
+        <span class="site-logo-text">
+          <strong>RÉSONANCES</strong>
+          <small>Festival · 9 au 11 juillet 2027</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="programme.html">Programme</a>
+        <a href="billetterie.html">Billetterie</a>
+        <a href="infos.html">Infos pratiques</a>
+      </nav>
+
+      <div class="l-header-actions">
+        <button class="btn btn-outline" type="button">
+          Mode sombre
+        </button>
+
+        <a href="billetterie.html" class="btn btn-primary">
+          Réserver
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ===================================
+       CONTENU PRINCIPAL
+  ==================================== -->
+
+  <main class="l-components-page">
+
+    <!-- INTRODUCTION -->
+
+    <section class="l-components-hero">
+      <div class="l-container">
+
+        <p class="l-breadcrumb">
+          Accueil / Bibliothèque de composants
+        </p>
+
+        <h1>Bibliothèque de composants</h1>
+
+        <p>
+          Tous les composants du site, avec leurs variantes et leurs états.
+        </p>
+
+      </div>
+    </section>
+
+
+    <div class="l-container">
+
+      <!-- NAVIGATION INTERNE -->
+
+      <nav class="l-components-nav" aria-label="Sections de la bibliothèque">
+        <a href="#jetons">Jetons</a>
+        <a href="#boutons">Boutons</a>
+        <a href="#badges">Badges</a>
+        <a href="#cartes">Cartes</a>
+        <a href="#formulaires">Formulaires</a>
+        <a href="#filtres">Filtres</a>
+        <a href="#faq">Questions fréquentes</a>
+      </nav>
+
+
+      <!-- ===================================
+           SECTION 1 : JETONS
+      ==================================== -->
+
+      <section class="l-components-section" id="jetons">
+
+        <h2>Jetons</h2>
+
+        <p>
+          Couleurs, typographie et espacements utilisés par tous les composants.
+        </p>
+
+        <!-- COULEURS -->
+
+        <div class="l-component-row">
+
+          <strong class="l-component-label">Couleurs</strong>
+
+          <div class="l-token-grid">
+
+            <article class="l-token-color">
+              <div class="l-color-swatch token-text-primary"></div>
+              <h3>Texte principal</h3>
+              <p>#1C1B2E</p>
+            </article>
+
+            <article class="l-token-color">
+              <div class="l-color-swatch token-text-body"></div>
+              <h3>Texte courant</h3>
+              <p>#3A3950</p>
+            </article>
+
+            <article class="l-token-color">
+              <div class="l-color-swatch token-text-secondary"></div>
+              <h3>Texte secondaire</h3>
+              <p>#6B6A80</p>
+            </article>
+
+            <article class="l-token-color">
+              <div class="l-color-swatch token-background-alternate"></div>
+              <h3>Fond alterné</h3>
+              <p>#F4F5F7</p>
+            </article>
+
+            <article class="l-token-color">
+              <div class="l-color-swatch token-border"></div>
+              <h3>Bordures</h3>
+              <p>#E3E5EA</p>
+            </article>
+
+            <article class="l-token-color">
+              <div class="l-color-swatch token-primary"></div>
+              <h3>Principale</h3>
+              <p>#C8402A</p>
+            </article>
+
+            <article class="l-token-color">
+              <div class="l-color-swatch token-primary-hover"></div>
+              <h3>Survol</h3>
+              <p>#A3311F</p>
+            </article>
+
+            <article class="l-token-color">
+              <div class="l-color-swatch token-accent"></div>
+              <h3>Accent</h3>
+              <p>#F4C95D</p>
+            </article>
+
+            <article class="l-token-color">
+              <div class="l-color-swatch token-error"></div>
+              <h3>Erreur</h3>
+              <p>#B3261E</p>
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- SCÈNES -->
+
+        <div class="l-component-row">
+
+          <strong class="l-component-label">Scènes</strong>
+
+          <div class="l-token-grid">
+
+            <article class="l-token-color">
+              <div class="stage-preview theme-lac">
+                Scène du Lac
+              </div>
+              <p>#1F4E8C</p>
+            </article>
+
+            <article class="l-token-color">
+              <div class="stage-preview theme-foret">
+                Scène de la Forêt
+              </div>
+              <p>#2F6B3A</p>
+            </article>
+
+            <article class="l-token-color">
+              <div class="stage-preview theme-kiosque">
+                Le Kiosque
+              </div>
+              <p>#B87A1E</p>
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- TYPOGRAPHIE -->
+
+        <div class="l-component-row">
+
+          <strong class="l-component-label">Typographie</strong>
+
+          <div class="l-type-examples">
+
+            <div class="l-type-example">
+              <h2>Titre 40</h2>
+            </div>
+
+            <div class="l-type-example">
+              <h3>Sous-titre 28</h3>
+            </div>
+
+            <div class="l-type-example">
+              <p class="l-type-intro">Introduction 20</p>
+            </div>
+
+            <div class="l-type-example">
+              <p>Courant 16</p>
+            </div>
+
+            <div class="l-type-example">
+              <small>Petit 14</small>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ESPACEMENTS -->
+
+        <div class="l-component-row">
+
+          <strong class="l-component-label">Espacements</strong>
+
+          <div class="l-spacing-examples">
+
+            <div class="l-spacing-item">
+              <div class="l-spacing-bar l-spacing-small"></div>
+              <small>8 px</small>
+            </div>
+
+            <div class="l-spacing-item">
+              <div class="l-spacing-bar l-spacing-medium"></div>
+              <small>16 px</small>
+            </div>
+
+            <div class="l-spacing-item">
+              <div class="l-spacing-bar l-spacing-large"></div>
+              <small>24 px</small>
+            </div>
+
+            <div class="l-spacing-item">
+              <div class="l-spacing-bar l-spacing-section"></div>
+              <small>40 px</small>
+            </div>
+
+            <div class="l-spacing-item">
+              <div class="l-spacing-bar l-spacing-major"></div>
+              <small>64 px</small>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================
+           SECTION 2 : BOUTONS
+      ==================================== -->
+
+      <section class="l-components-section" id="boutons">
+
+        <h2>Boutons</h2>
+
+        <p>
+          Un composant de base, des variantes de couleur et de taille,
+          une icône facultative et des états.
+        </p>
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Bouton de base</strong>
+
+          <div class="l-component-examples">
+            <button class="btn btn-primary" type="button">
+              Réserver
+            </button>
+          </div>
+        </div>
+
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Couleurs</strong>
+
+          <div class="l-component-examples">
+            <button class="btn btn-primary" type="button">
+              Principal
+            </button>
+
+            <button class="btn btn-secondary" type="button">
+              Secondaire
+            </button>
+
+            <button class="btn btn-outline" type="button">
+              Contour
+            </button>
+
+            <div class="l-dark-preview">
+              <button class="btn btn-light" type="button">
+                Clair
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Tailles</strong>
+
+          <div class="l-component-examples">
+            <button class="btn btn-primary btn-small" type="button">
+              Petit
+            </button>
+
+            <button class="btn btn-primary btn-medium" type="button">
+              Moyen
+            </button>
+
+            <button class="btn btn-primary btn-large" type="button">
+              Grand
+            </button>
+          </div>
+        </div>
+
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Avec icône</strong>
+
+          <div class="l-component-examples">
+            <button class="btn btn-primary" type="button">
+              <span aria-hidden="true">＋</span>
+              Ajouter au programme
+            </button>
+
+            <button class="btn btn-secondary" type="button">
+              <span aria-hidden="true">♧</span>
+              Réserver
+            </button>
+
+            <button class="btn btn-outline" type="button" aria-label="Ajouter aux favoris">
+              ♡
+            </button>
+
+            <button class="btn btn-outline" type="button">
+              → Suivant
+            </button>
+          </div>
+        </div>
+
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Combinaisons et états</strong>
+
+          <div class="l-component-examples">
+            <button class="btn btn-secondary btn-large" type="button">
+              Secondaire grand
+            </button>
+
+            <button class="btn btn-primary is-hover-demo" type="button">
+              Survol
+            </button>
+
+            <button class="btn btn-primary is-focus-demo" type="button">
+              Focus clavier
+            </button>
+
+            <button class="btn btn-primary is-disabled" type="button" disabled>
+              Désactivé
+            </button>
+
+            <button class="btn btn-primary is-loading" type="button">
+              ◯ Chargement
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- ===================================
+           SECTION 3 : BADGES
+      ==================================== -->
+
+      <section class="l-components-section" id="badges">
+
+        <h2>Badges</h2>
+
+        <p>
+          Pour signaler une scène, un statut ou un nombre.
+        </p>
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Badge de base</strong>
+
+          <div class="l-component-examples">
+            <span class="stage-badge">Badge</span>
+          </div>
+        </div>
+
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Scènes</strong>
+
+          <div class="l-component-examples">
+            <span class="stage-badge theme-lac">Scène du Lac</span>
+            <span class="stage-badge theme-foret">Scène de la Forêt</span>
+            <span class="stage-badge theme-kiosque">Le Kiosque</span>
+          </div>
+        </div>
+
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Statuts</strong>
+
+          <div class="l-component-examples">
+            <span class="status-badge status-new">Nouveau</span>
+            <span class="status-badge status-warning">Dernières places</span>
+            <span class="status-badge status-full">Complet</span>
+          </div>
+        </div>
+
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Tailles</strong>
+
+          <div class="l-component-examples">
+            <span class="stage-badge theme-lac badge-small">Petit</span>
+            <span class="stage-badge theme-lac badge-large">Grand</span>
+          </div>
+        </div>
+
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Styles</strong>
+
+          <div class="l-component-examples">
+            <span class="stage-badge theme-foret">Plein arrondi</span>
+            <span class="stage-badge badge-outline theme-foret">Contour</span>
+            <span class="stage-badge badge-square theme-kiosque">Angles droits</span>
+          </div>
+        </div>
+
+
+        <div class="l-component-row">
+          <strong class="l-component-label">Compteur</strong>
+
+          <div class="l-component-examples">
+            <button class="btn btn-secondary l-counter-button" type="button">
+              ♡ Mon programme
+              <span class="counter-badge">3</span>
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- ===================================
+           SECTION 4 : CARTES
+      ==================================== -->
+
+      <section class="l-components-section" id="cartes">
+
+        <h2>Cartes</h2>
+
+        <p>
+          La carte d'artiste, ses variantes, et les autres cartes du site.
+        </p>
+
+        <h3>Carte de base</h3>
+
+        <div class="l-card-grid">
+
+          <article class="artist-card">
+            <div class="artist-card-image artist-image-lac" role="img" aria-label="Batterie éclairée en bleu sur une scène"></div>
+
+            <div class="artist-card-content">
+              <span class="stage-badge theme-lac">Scène du Lac</span>
+
+              <h3>Marée Basse</h3>
+
+              <p>Rock · Ven. 9 · 20 h 15</p>
+
+              <a href="artiste.html" class="artist-card-link">
+                Voir la fiche →
+              </a>
+            </div>
+          </article>
+
+
+          <article class="artist-card artist-card-compact">
+            <div class="artist-card-content">
+              <span class="stage-badge theme-kiosque">Le Kiosque</span>
+
+              <h3>Clara Ninon Quartet</h3>
+
+              <p>Jazz vocal · Ven. 9 · 18 h 30</p>
+
+              <a href="artiste.html" class="artist-card-link">
+                Voir la fiche →
+              </a>
+            </div>
+          </article>
+
+
+          <article class="artist-card">
+            <div class="artist-card-image artist-image-kiosque" role="img" aria-label="Batterie sur une scène chaleureuse"></div>
+
+            <div class="artist-card-content">
+              <span class="stage-badge theme-kiosque">Le Kiosque</span>
+
+              <h3>Cordes Sensibles et l’Ensemble du Kiosque</h3>
+
+              <p>Acoustique · Sam. 10 · 17 h 30</p>
+
+              <a href="artiste.html" class="artist-card-link">
+                Voir la fiche →
+              </a>
+            </div>
+
+            <div class="artist-card-actions">
+              <a href="artiste.html" class="btn btn-secondary btn-small">
+                Voir la fiche
+              </a>
+
+              <button class="btn btn-outline btn-small" type="button">
+                ＋ Ajouter
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="l-component-caption">
+          Avec image · sans image · titre sur deux lignes et pied avec actions
+        </p>
+
+
+        <h3>Variantes</h3>
+
+        <div class="l-card-grid">
+
+          <article class="artist-card artist-card-featured">
+            <div class="artist-card-image artist-image-featured" role="img" aria-label="Scène de concert avec éclairages rouges"></div>
+
+            <div class="artist-card-content">
+              <span class="stage-badge theme-lac">Scène du Lac</span>
+
+              <h3>LUNE ROUSSE</h3>
+
+              <p>Pop · Ven. 9 · 22 h 30</p>
+
+              <a href="artiste.html" class="artist-card-link">
+                Voir la fiche →
+              </a>
+            </div>
+          </article>
+
+
+          <article class="artist-card">
+            <div class="artist-card-image artist-image-foret" role="img" aria-label="Public devant une scène éclairée"></div>
+
+            <div class="artist-card-content">
+              <span class="stage-badge theme-foret">Scène de la Forêt</span>
+
+              <h3>Brume</h3>
+
+              <p>House · Sam. 10 · 01 h 00</p>
+
+              <a href="artiste.html" class="artist-card-link">
+                Voir la fiche →
+              </a>
+            </div>
+          </article>
+
+
+          <article class="artist-card">
+            <div class="artist-card-image artist-image-concert" role="img" aria-label="Concert avec faisceaux lumineux bleus"></div>
+
+            <div class="artist-card-content">
+              <span class="stage-badge theme-foret">Scène de la Forêt</span>
+
+              <h3>Sylve</h3>
+
+              <p>Ambient · Dim. 11 · 20 h 00</p>
+
+              <a href="artiste.html" class="artist-card-link">
+                Voir la fiche →
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="l-component-caption">
+          Mise en avant (têtes d'affiche) · compacte (autres artistes)
+        </p>
+
+
+        <h3>Horizontale</h3>
+
+        <article class="artist-card artist-card-horizontal">
+
+          <div class="artist-card-image artist-image-horizontal" role="img" aria-label="Concert avec lumières rouges"></div>
+
+          <div class="artist-card-content">
+            <span class="stage-badge theme-foret">Scène de la Forêt</span>
+
+            <h3>Vertige 808</h3>
+
+            <p>Techno · Ven. 9 · 23 h 30</p>
+
+            <p>
+              Un set entre house et disco, pensé pour la clairière de la forêt.
+            </p>
+
+            <a href="artiste.html" class="artist-card-link">
+              Voir la fiche →
+            </a>
+          </div>
+
+        </article>
+
+        <p class="l-component-caption">
+          Image à gauche, contenu à droite : écrans larges et résultats de recherche
+        </p>
+
+
+        <h3>Autres cartes</h3>
+
+        <div class="l-card-grid">
+
+          <article class="ticket-card">
+            <h3>Pass 1 jour</h3>
+
+            <p class="ticket-price">49 €</p>
+
+            <ul>
+              <li>✓ Accès aux trois scènes</li>
+              <li>✓ Navette gratuite</li>
+              <li>✓ Bracelet nominatif</li>
+            </ul>
+
+            <a href="billetterie.html" class="btn btn-outline">
+              Choisir
+            </a>
+          </article>
+
+
+          <article class="ticket-card ticket-card-featured">
+            <span class="ticket-recommendation">Le plus choisi</span>
+
+            <h3>Pass 3 jours</h3>
+
+            <p class="ticket-price">119 €</p>
+
+            <ul>
+              <li>✓ Accès aux trois scènes</li>
+              <li>✓ Navette gratuite</li>
+              <li>✓ Accès prioritaire au Kiosque</li>
+            </ul>
+
+            <a href="billetterie.html" class="btn btn-primary">
+              Choisir
+            </a>
+          </article>
+
+
+          <article class="stage-card theme-lac">
+            <h3>Scène du Lac</h3>
+            <p>Pop et rock</p>
+
+            <a href="programme.html">
+              Découvrir la scène →
+            </a>
+          </article>
+
+
+          <article class="info-card">
+            <span class="info-number">1</span>
+
+            <h3>Accès</h3>
+
+            <p>
+              En train : gare de Saint-Aulnes,
+              puis navette gratuite.
+            </p>
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================
+           SECTION 5 : FORMULAIRES
+      ==================================== -->
+
+      <section class="l-components-section" id="formulaires">
+
+        <h2>Formulaires</h2>
+
+        <p>
+          Champ de saisie, liste déroulante et case à cocher,
+          avec leurs états.
+        </p>
+
+        <div class="l-component-row">
+
+          <strong class="l-component-label">Champ de saisie</strong>
+
+          <div class="l-form-grid">
+
+            <div class="form-field">
+              <label for="demo-name">Nom</label>
+              <input id="demo-name" type="text" value="Durand">
+              <small>Texte d'aide</small>
+            </div>
+
+            <div class="form-field">
+              <label for="demo-formula">Formule</label>
+              <input id="demo-formula" class="is-focus-demo" type="text" value="Pass 3 jours">
+              <small>Focus</small>
+            </div>
+
+            <div class="form-field">
+              <label for="demo-email">E-mail</label>
+              <input id="demo-email" class="has-error" type="email" value="camille.durand@">
+              <small class="form-error-message">Adresse e-mail invalide.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="demo-promo">Code promo</label>
+              <input id="demo-promo" type="text" placeholder="Indisponible" disabled>
+              <small>Désactivé</small>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="l-component-row">
+
+          <strong class="l-component-label">Liste et case</strong>
+
+          <div class="l-form-grid">
+
+            <div class="form-field">
+              <label for="demo-pass">Nombre de pass</label>
+
+              <select id="demo-pass">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+              </select>
+            </div>
+
+            <label class="form-checkbox">
+              <input type="checkbox" checked>
+              <span>J'accepte les conditions générales</span>
+            </label>
+
+            <label class="form-checkbox">
+              <input type="checkbox">
+              <span>Recevoir la newsletter</span>
+            </label>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================
+           SECTION 6 : FILTRES
+      ==================================== -->
+
+      <section class="l-components-section" id="filtres">
+
+        <h2>Filtres</h2>
+
+        <p>
+          Groupe de boutons qui filtre le programme ;
+          un seul filtre est sélectionné à la fois.
+        </p>
+
+        <div class="l-component-row">
+
+          <strong class="l-component-label">Groupe de filtres</strong>
+
+          <div class="program-filters" role="group" aria-label="Filtrer par scène">
+
+            <button class="program-filter" type="button">
+              Toutes les scènes
+            </button>
+
+            <button class="program-filter is-active" type="button" aria-pressed="true">
+              Scène du Lac
+            </button>
+
+            <button class="program-filter" type="button">
+              Scène de la Forêt
+            </button>
+
+            <button class="program-filter" type="button">
+              Le Kiosque
+            </button>
+
+          </div>
+
+        </div>
+
+        <p class="l-component-caption">
+          Normal · sélectionné (ici « Scène du Lac »)
+        </p>
+
+      </section>
+
+
+      <!-- ===================================
+           SECTION 7 : QUESTIONS FRÉQUENTES
+      ==================================== -->
+
+      <section class="l-components-section" id="faq">
+
+        <h2>Questions fréquentes</h2>
+
+        <p>
+          Accordéon : chaque question s'ouvre et se ferme indépendamment.
+        </p>
+
+        <div class="l-component-row">
+
+          <strong class="l-component-label">Fermée</strong>
+
+          <details class="faq-item">
+            <summary>
+              Les enfants sont-ils acceptés ?
+            </summary>
+
+            <p>
+              Oui, le festival accueille les familles.
+              Les conditions d'accès dépendent de l'âge des enfants.
+            </p>
+          </details>
+
+        </div>
+
+
+        <div class="l-component-row">
+
+          <strong class="l-component-label">Ouverte</strong>
+
+          <details class="faq-item" open>
+            <summary>
+              Puis-je revendre mon pass ?
+            </summary>
+
+            <p>
+              Oui, via la plateforme officielle de revente,
+              jusqu'à 48 heures avant le festival.
+              Le pass est alors réédité au nom du nouvel acheteur.
+            </p>
+          </details>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <!-- ===================================
+       FOOTER
+  ==================================== -->
+
+  <footer class="site-footer">
+
+    <div class="l-container l-footer-grid">
+
+      <div class="l-footer-brand">
+        <h2>RÉSONANCES</h2>
+
+        <p>
+          Festival de musique au bord du lac des Aulnes.
+          Trois jours, trois scènes, une quarantaine d'artistes.
+        </p>
+      </div>
+
+
+      <div class="l-footer-column">
+        <h3>Le festival</h3>
+
+        <a href="programme.html">Programme</a>
+        <a href="billetterie.html">Billetterie</a>
+        <a href="infos.html">Infos pratiques</a>
+      </div>
+
+
+      <div class="l-footer-column">
+        <h3>Contact</h3>
+
+        <a href="mailto:contact@resonances-festival.fr">
+          contact@resonances-festival.fr
+        </a>
+
+        <a href="tel:+33400000000">
+          04 00 00 00 00
+        </a>
+      </div>
+
+
+      <div class="l-footer-column">
+        <h3>Newsletter</h3>
+
+        <form class="newsletter-form">
+          <label for="newsletter-email" class="visually-hidden">
+            Votre adresse e-mail
+          </label>
+
+          <input
+            id="newsletter-email"
+            type="email"
+            placeholder="Votre e-mail"
+          >
+        </form>
+      </div>
+
+    </div>
+
+
+    <div class="l-container l-footer-bottom">
+      <p>
+        © 2027 Association Résonances · Mentions légales ·
+        Accessibilité · Crédits photos
+      </p>
+    </div>
+
+  </footer>
+
 </body>
 </html>

@@ -15,3 +15,37 @@ Un élément sélectionné.
 Un élément masqué.
 
 */
+
+// ÉTATS DES BOUTONS
+
+
+.btn-primary:hover {
+  background-color: var(--color-action-primary-hover);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-text-body);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-background-alternate);
+}
+
+.btn-light:hover {
+  background-color: var(--color-background-alternate);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.btn:disabled,
+.btn.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn.is-loading {
+  cursor: wait;
+}

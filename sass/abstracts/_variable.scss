@@ -1,51 +1,90 @@
+
+// 1. COULEURS
+
 // Couleurs générales
-$color-text-primary: #1C1B2E;
-$color-text-body: #3A3950;
-$color-text-secondary: #6B6A80;
+$colors: (
+  "text-primary": #1C1B2E,
+  "text-body": #3A3950,
+  "text-secondary": #6B6A80,
+  "background-page": #FFFFFF,
+  "background-alternate": #F4F5F7,
+  "border-default": #E3E5EA,
+  "border-input": #CBD0D8,
+  "action-primary": #C8402A,
+  "action-primary-hover": #A3311F,
+  "accent": #F4C95D,
+  "error": #B3261E,
 
-
-$color-background: #FFFFFF;
-$color-background-alt: #F4F5F7;
-
-
-
-$color-border: #E3E5EA;
-$color-border-input: #CBD0D8;
-
-
-
-$color-primary: #C8402A;
-$color-primary-hover: #A3311F;
-$color-accent: #F4C95D;
-$color-error: #B3261E;
-
-
-
-// Couleurs des scènes
-$color-stage-lac: #1F4E8C;
-$color-stage-foret: #2F6B3A;
-$color-stage-kiosque: #B87A1E;
-
-// Typographie
-$font-family-base: "Inter", sans-serif;
-
-$font-size-small: 14px;
-$font-size-body: 16px;
-$font-size-intro: 20px;
-$font-size-subtitle: 28px;
-$font-size-section: 40px;
-$font-size-title: 56px;
+  // Couleurs des scènes
+  "stage-lac": #1F4E8C,
+  "stage-foret": #2F6B3A,
+  "stage-kiosque": #B87A1E,
+  "stage-text-light": #FFFFFF,
+  "stage-text-dark": #1C1B2E
+);
 
 
 
-// Espacements
-$spacing-1: 8px;
-$spacing-2: 16px;
-$spacing-3: 24px;
-$spacing-4: 40px;
-$spacing-5: 64px;
+// 2. TYPOGRAPHIE
 
-// Rayons
-$radius-small: 6px;
-$radius-medium: 12px;
-$radius-pill: 999px;
+$font-family-primary: "Inter", sans-serif;
+
+$font-sizes: (
+  "small": 14px,
+  "body": 16px,
+  "intro": 20px,
+  "h3": 28px,
+  "h2": 40px,
+  "h1": 56px
+);
+
+$line-heights: (
+  "small": 22px,
+  "body": 26px,
+  "intro": 32px,
+  "h3": 36px,
+  "h2": 48px,
+  "h1": 64px
+);
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "extrabold": 800
+);
+
+
+
+// 3. ESPACEMENTS
+
+$spacings: (
+  "small": 8px,
+  "medium": 16px,
+  "large": 24px,
+  "section": 40px,
+  "major": 64px
+);
+
+
+
+// 4. RAYONS DE BORDURE
+
+$border-radii: (
+  "small": 6px,
+  "medium": 12px,
+  "pill": 999px
+);
+
+
+
+// 5. POINTS DE RUPTURE
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+
+
+

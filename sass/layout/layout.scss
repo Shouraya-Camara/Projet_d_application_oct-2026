@@ -15,3 +15,257 @@ Container
 Grilles et colonnes
 
 */
+
+
+// PAGE BIBLIOTHÈQUE DE COMPOSANTS
+
+
+
+.l-components-page {
+  padding-block: var(--spacing-major);
+}
+
+.l-components-intro {
+  margin-bottom: var(--spacing-major);
+}
+
+.l-components-eyebrow {
+  color: var(--color-action-primary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.l-components-section {
+  padding-block: var(--spacing-major);
+  border-top: 1px solid var(--color-border-default);
+
+  > p {
+    margin-block: var(--spacing-medium) var(--spacing-large);
+  }
+
+  > h3 {
+    margin-block: var(--spacing-large);
+  }
+}
+
+// Grille des couleurs
+
+.l-token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--spacing-large);
+  margin-top: var(--spacing-large);
+}
+
+.l-token-color {
+  min-width: 0;
+
+  h3 {
+    margin-top: var(--spacing-small);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+  }
+
+  p {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+  }
+}
+
+.l-color-swatch {
+  width: 100%;
+  height: 100px;
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-medium);
+}
+
+// Exemples typographiques
+
+.l-type-example {
+  padding-block: var(--spacing-large);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.l-token-label {
+  margin-bottom: var(--spacing-medium);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.l-type-intro {
+  font-size: var(--font-size-intro);
+  line-height: var(--line-height-intro);
+}
+
+// Exemples d'espacements
+
+.l-spacing-example {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-large);
+  margin-block: var(--spacing-large);
+
+  p {
+    flex: 0 0 150px;
+    font-size: var(--font-size-small);
+  }
+}
+
+.l-spacing-bar {
+  width: var(--spacing-major);
+  background-color: var(--color-action-primary);
+  border-radius: var(--radius-small);
+}
+
+.l-spacing-small {
+  height: var(--spacing-small);
+}
+
+.l-spacing-medium {
+  height: var(--spacing-medium);
+}
+
+.l-spacing-large {
+  height: var(--spacing-large);
+}
+
+.l-spacing-section {
+  height: var(--spacing-section);
+}
+
+.l-spacing-major {
+  height: var(--spacing-major);
+}
+
+// Adaptation mobile
+
+@media (max-width: 768px) {
+  .l-components-page {
+    padding-block: var(--spacing-large);
+  }
+
+  .l-components-section {
+    padding-block: var(--spacing-large);
+  }
+
+  .l-spacing-example {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--spacing-small);
+  }
+}
+
+// BIBLIOTHÈQUE DE COMPOSANTS
+
+.l-components-page {
+  background-color: var(--color-background-page);
+}
+
+.l-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-large);
+}
+
+.l-header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-small);
+}
+
+.l-components-hero {
+  padding-block: var(--spacing-major);
+  background-color: var(--color-background-alternate);
+}
+
+.l-breadcrumb {
+  margin-bottom: var(--spacing-small);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.l-components-hero h1 {
+  margin-bottom: var(--spacing-small);
+}
+
+.l-components-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-large);
+  padding-block: var(--spacing-large);
+  border-bottom: 1px solid var(--color-border-default);
+
+  a {
+    color: var(--color-action-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-h2);
+    text-decoration: none;
+  }
+}
+
+.l-components-section {
+  padding-block: var(--spacing-major);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.l-components-section > h2 {
+  padding-bottom: var(--spacing-small);
+  border-bottom: 2px solid var(--color-action-primary);
+}
+
+.l-components-section > p {
+  margin-block: var(--spacing-medium) var(--spacing-large);
+}
+
+@media (max-width: 768px) {
+  .l-header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .l-components-nav {
+    gap: var(--spacing-medium);
+  }
+}
+
+
+// Organisation des exemples de composants
+
+.l-component-row {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  align-items: center;
+  gap: var(--spacing-large);
+  padding-block: var(--spacing-large);
+}
+
+.l-component-label {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-h2);
+}
+
+.l-component-examples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-medium);
+}
+
+.l-dark-preview {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-large);
+  background-color: var(--color-text-primary);
+  border-radius: var(--radius-small);
+}
+
+@media (max-width: 768px) {
+  .l-component-row {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-medium);
+  }
+}
