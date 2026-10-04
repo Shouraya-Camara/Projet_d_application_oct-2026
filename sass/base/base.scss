@@ -1,69 +1,91 @@
-
-
-/*
-Le reset CSS.
-
-Les styles du body.
-
-Les styles généraux des titres (h1, h2, h3).
-
-Les styles des paragraphes (p).
-
-Les styles des liens (a).
-
-Les styles des listes (ul, ol).
-
-Les styles généraux des boutons et des champs de formulaire.
-
-
-*/
-
-
 // Typographie générale
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family-primary);
 }
 
 body {
-  color: #3A3950;
-  background-color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
+  color: var(--color-text-body);
+  background-color: var(--color-background-page);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body);
+  line-height: var(--line-height-body);
 }
 
 // Titres
+
 h1 {
-  color: #1C1B2E;
-  font-size: 56px;
-  font-weight: 800;
-  line-height: 64px;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  line-height: var(--line-height-h1);
 }
 
 h2 {
-  color: #1C1B2E;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  line-height: var(--line-height-h2);
 }
 
 h3 {
-  color: #1C1B2E;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 36px;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3);
+  line-height: var(--line-height-h3);
 }
 
-// Textes
-p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
+// Texte d'introduction
+
+.intro {
+  color: var(--color-text-body);
+  font-size: var(--font-size-intro);
+  font-weight: var(--font-weight-intro);
+  line-height: var(--line-height-intro);
 }
+
+// Paragraphes
+
+p {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body);
+  line-height: var(--line-height-body);
+}
+
+// Petit texte
 
 small {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-small);
+  line-height: var(--line-height-small);
+}
+
+// Liens
+
+a {
+  color: var(--color-action-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-action-primary-hover);
+}
+
+// Listes
+
+ul,
+ol {
+  padding-left: var(--spacing-large);
+}
+
+// Champs de formulaire
+
+input,
+select,
+textarea {
+  color: var(--color-text-body);
+  background-color: var(--color-background-page);
+  border: 1px solid var(--color-border-input);
+  border-radius: var(--radius-small);
 }

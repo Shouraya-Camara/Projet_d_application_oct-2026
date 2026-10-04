@@ -1,28 +1,31 @@
-/*
-
-Header
-
-Navigation principale
-
-Main
-
-Sidebar
-
-Footer
-
-Container
-
-Grilles et colonnes
-
-*/
+// ===================================
+// LAYOUT
+// Header
+// Navigation
+// Main
+// Footer
+// Container
+// Grilles
+// ===================================
 
 
+// ===================================
+// CONTAINER
+// ===================================
+
+.l-container {
+  width: min(100% - 32px, 1100px);
+  margin-inline: auto;
+}
+
+
+// ===================================
 // PAGE BIBLIOTHÈQUE DE COMPOSANTS
-
-
+// ===================================
 
 .l-components-page {
   padding-block: var(--spacing-major);
+  background-color: var(--color-background-page);
 }
 
 .l-components-intro {
@@ -35,25 +38,143 @@ Grilles et colonnes
   line-height: var(--line-height-small);
 }
 
-.l-components-section {
-  padding-block: var(--spacing-major);
-  border-top: 1px solid var(--color-border-default);
 
-  > p {
-    margin-block: var(--spacing-medium) var(--spacing-large);
+// ===================================
+// HEADER
+// ===================================
+
+.l-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-large);
+}
+
+.l-header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-small);
+}
+
+
+// ===================================
+// HERO
+// ===================================
+
+.l-components-hero {
+  padding-block: var(--spacing-major);
+  background-color: var(--color-background-alternate);
+}
+
+.l-breadcrumb {
+  margin-bottom: var(--spacing-small);
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.l-components-hero h1 {
+  margin-bottom: var(--spacing-small);
+}
+
+
+// ===================================
+// NAVIGATION DE LA BIBLIOTHÈQUE
+// ===================================
+
+.l-components-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-large);
+
+  padding-block: var(--spacing-large);
+
+  border-bottom: 1px solid var(--color-border-default);
+
+  a {
+    color: var(--color-action-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-h2);
+    text-decoration: none;
   }
 
-  > h3 {
-    margin-block: var(--spacing-large);
+  a:hover {
+    color: var(--color-action-primary-hover);
   }
 }
 
-// Grille des couleurs
+
+// ===================================
+// SECTIONS
+// ===================================
+
+.l-components-section {
+  padding-block: var(--spacing-major);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.l-components-section > h2 {
+  padding-bottom: var(--spacing-small);
+  border-bottom: 2px solid var(--color-action-primary);
+}
+
+.l-components-section > p {
+  margin-block: var(--spacing-medium) var(--spacing-large);
+}
+
+.l-components-section > h3 {
+  margin-top: var(--spacing-large);
+  margin-bottom: var(--spacing-medium);
+}
+
+
+// ===================================
+// ORGANISATION DES COMPOSANTS
+// ===================================
+
+.l-component-row {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  align-items: center;
+  gap: var(--spacing-large);
+
+  padding-block: var(--spacing-large);
+}
+
+.l-component-label {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-h2);
+}
+
+.l-component-examples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-medium);
+}
+
+.l-dark-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--spacing-large);
+
+  background-color: var(--color-text-primary);
+  border-radius: var(--radius-small);
+}
+
+
+// ===================================
+// JETONS / COULEURS
+// ===================================
 
 .l-token-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: var(--spacing-large);
+
   margin-top: var(--spacing-large);
 }
 
@@ -62,6 +183,7 @@ Grilles et colonnes
 
   h3 {
     margin-top: var(--spacing-small);
+
     font-size: var(--font-size-body);
     line-height: var(--line-height-body);
   }
@@ -73,25 +195,52 @@ Grilles et colonnes
   }
 }
 
-.l-color-swatch {
-  width: 100%;
-  height: 100px;
-  border: 1px solid var(--color-border-default);
-  border-radius: var(--radius-medium);
-}
 
-// Exemples typographiques
+// ===================================
+// TYPOGRAPHIE
+// ===================================
+
+.l-type-examples {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: baseline;
+  gap: var(--spacing-large);
+}
 
 .l-type-example {
-  padding-block: var(--spacing-large);
-  border-bottom: 1px solid var(--color-border-default);
+  padding: 0;
+  border: 0;
 }
 
-.l-token-label {
-  margin-bottom: var(--spacing-medium);
-  color: var(--color-text-secondary);
+.l-type-example h2,
+.l-type-example h3,
+.l-type-example p,
+.l-type-example small {
+  margin: 0;
+}
+
+.l-type-example h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  font-weight: var(--font-weight-h2);
+}
+
+.l-type-example h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  font-weight: var(--font-weight-h3);
+}
+
+.l-type-example p {
+  font-size: var(--font-size-intro);
+  line-height: var(--line-height-intro);
+  font-weight: var(--font-weight-intro);
+}
+
+.l-type-example small {
   font-size: var(--font-size-small);
   line-height: var(--line-height-small);
+  font-weight: var(--font-weight-small);
 }
 
 .l-type-intro {
@@ -99,24 +248,38 @@ Grilles et colonnes
   line-height: var(--line-height-intro);
 }
 
-// Exemples d'espacements
 
-.l-spacing-example {
+// ===================================
+// ESPACEMENTS
+// ===================================
+
+.l-spacing-examples {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: var(--spacing-large);
-  margin-block: var(--spacing-large);
+}
 
-  p {
-    flex: 0 0 150px;
-    font-size: var(--font-size-small);
-  }
+.l-spacing-item {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-small);
+}
+
+.l-spacing-item small {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  white-space: nowrap;
 }
 
 .l-spacing-bar {
-  width: var(--spacing-major);
+  flex-shrink: 0;
+
+  width: auto;
+  aspect-ratio: 1;
+
   background-color: var(--color-action-primary);
-  border-radius: var(--radius-small);
+  border-radius: 0;
 }
 
 .l-spacing-small {
@@ -139,9 +302,61 @@ Grilles et colonnes
   height: var(--spacing-major);
 }
 
-// Adaptation mobile
+
+// ===================================
+// CARTES
+// ===================================
+
+.l-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: var(--spacing-large);
+}
+
+
+// Grille avec une carte mise en avant
+
+.l-card-grid:has(.artist-card-featured) {
+  grid-template-columns: 1.5fr 1fr 1fr;
+}
+
+
+// ===================================
+// CARTE HORIZONTALE
+// ===================================
+
+.artist-card-horizontal {
+  display: grid;
+  grid-template-columns: minmax(240px, 360px) 1fr;
+}
+
+.artist-card-horizontal .artist-card-image {
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+
+// ===================================
+// LÉGENDES
+// ===================================
+
+.l-component-caption {
+  margin-top: var(--spacing-small);
+
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+
+// ===================================
+// RESPONSIVE
+// ===================================
 
 @media (max-width: 768px) {
+
   .l-components-page {
     padding-block: var(--spacing-large);
   }
@@ -150,78 +365,6 @@ Grilles et colonnes
     padding-block: var(--spacing-large);
   }
 
-  .l-spacing-example {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: var(--spacing-small);
-  }
-}
-
-// BIBLIOTHÈQUE DE COMPOSANTS
-
-.l-components-page {
-  background-color: var(--color-background-page);
-}
-
-.l-header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-large);
-}
-
-.l-header-actions {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-small);
-}
-
-.l-components-hero {
-  padding-block: var(--spacing-major);
-  background-color: var(--color-background-alternate);
-}
-
-.l-breadcrumb {
-  margin-bottom: var(--spacing-small);
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-small);
-  line-height: var(--line-height-small);
-}
-
-.l-components-hero h1 {
-  margin-bottom: var(--spacing-small);
-}
-
-.l-components-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-large);
-  padding-block: var(--spacing-large);
-  border-bottom: 1px solid var(--color-border-default);
-
-  a {
-    color: var(--color-action-primary);
-    font-size: var(--font-size-small);
-    font-weight: var(--font-weight-h2);
-    text-decoration: none;
-  }
-}
-
-.l-components-section {
-  padding-block: var(--spacing-major);
-  border-bottom: 1px solid var(--color-border-default);
-}
-
-.l-components-section > h2 {
-  padding-bottom: var(--spacing-small);
-  border-bottom: 2px solid var(--color-action-primary);
-}
-
-.l-components-section > p {
-  margin-block: var(--spacing-medium) var(--spacing-large);
-}
-
-@media (max-width: 768px) {
   .l-header-inner {
     align-items: flex-start;
     flex-direction: column;
@@ -230,42 +373,26 @@ Grilles et colonnes
   .l-components-nav {
     gap: var(--spacing-medium);
   }
-}
 
-
-// Organisation des exemples de composants
-
-.l-component-row {
-  display: grid;
-  grid-template-columns: 170px 1fr;
-  align-items: center;
-  gap: var(--spacing-large);
-  padding-block: var(--spacing-large);
-}
-
-.l-component-label {
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-h2);
-}
-
-.l-component-examples {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--spacing-medium);
-}
-
-.l-dark-preview {
-  display: flex;
-  justify-content: center;
-  padding: var(--spacing-large);
-  background-color: var(--color-text-primary);
-  border-radius: var(--radius-small);
-}
-
-@media (max-width: 768px) {
   .l-component-row {
     grid-template-columns: 1fr;
     gap: var(--spacing-medium);
+  }
+
+  .l-type-examples {
+    grid-template-columns: 1fr;
+  }
+
+  .l-spacing-examples {
+    flex-wrap: wrap;
+  }
+
+  .l-card-grid,
+  .l-card-grid:has(.artist-card-featured) {
+    grid-template-columns: 1fr;
+  }
+
+  .artist-card-horizontal {
+    grid-template-columns: 1fr;
   }
 }

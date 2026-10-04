@@ -18,6 +18,7 @@ Un élément masqué.
 
 // ÉTATS DES BOUTONS
 
+// ÉTAT SURVOL
 
 .btn-primary:hover {
   background-color: var(--color-action-primary-hover);
@@ -35,10 +36,14 @@ Un élément masqué.
   background-color: var(--color-background-alternate);
 }
 
+// ÉTAT FOCUS
+
 .btn:focus-visible {
   outline: 3px solid var(--color-accent);
   outline-offset: 3px;
 }
+
+// ÉTAT DÉSACTIVÉ
 
 .btn:disabled,
 .btn.is-disabled {
@@ -46,6 +51,14 @@ Un élément masqué.
   cursor: not-allowed;
 }
 
+// ÉTAT CHARGEMENT
+
 .btn.is-loading {
   cursor: wait;
+}
+
+// DÉMONSTRATION DU SURVOL
+
+.btn.is-hover-demo {
+  background-color: var(--color-action-primary-hover);
 }

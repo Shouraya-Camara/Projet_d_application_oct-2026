@@ -19,3 +19,59 @@ Les ombres.
 Les thèmes clair et sombre
 
 */
+
+
+// Couleurs générales
+
+.token-text-primary {
+  background-color: var(--color-text-primary);
+}
+
+.token-text-body {
+  background-color: var(--color-text-body);
+}
+
+.token-text-secondary {
+  background-color: var(--color-text-secondary);
+}
+
+.token-background-alternate {
+  background-color: var(--color-background-alternate);
+}
+
+.token-border {
+  background-color: var(--color-border-default);
+}
+
+.token-primary {
+  background-color: var(--color-action-primary);
+}
+
+.token-primary-hover {
+  background-color: var(--color-action-primary-hover);
+}
+
+.token-accent {
+  background-color: var(--color-accent);
+}
+
+.token-error {
+  background-color: var(--color-error);
+}
+
+// Couleurs des scènes
+
+.theme-lac {
+  background-color: var(--color-stage-lac);
+  color: var(--color-stage-text-light);
+}
+
+.theme-foret {
+  background-color: var(--color-stage-foret);
+  color: var(--color-stage-text-light);
+}
+
+.theme-kiosque {
+  background-color: var(--color-stage-kiosque);
+  color: var(--color-stage-text-dark);
+}
