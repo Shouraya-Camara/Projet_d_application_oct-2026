@@ -151,7 +151,7 @@ textarea {
 }
 
 .l-container {
-  width: min(100% - 32px, 1100px);
+  padding: 0 120px 0 120px;
   margin-inline: auto;
 }
 
@@ -181,6 +181,15 @@ textarea {
   display: flex;
   align-items: center;
   gap: var(--spacing-small);
+}
+
+.site-nav-menu a {
+  margin: var(--spacing-small);
+  color: var(--color-text-secondary);
+}
+
+.logo-img {
+  width: 300px;
 }
 
 .l-components-hero {
@@ -407,6 +416,10 @@ textarea {
   color: var(--color-text-secondary);
   font-size: var(--font-size-small);
   line-height: var(--line-height-small);
+}
+
+.site-footer {
+  background-color: var(--color-text-primary);
 }
 
 @media (max-width: 768px) {

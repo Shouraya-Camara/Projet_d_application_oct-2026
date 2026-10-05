@@ -14,7 +14,7 @@
 // ===================================
 
 .l-container {
-  width: min(100% - 32px, 1100px);
+  padding: 0 120px 0 120px ;
   margin-inline: auto;
 }
 
@@ -56,6 +56,14 @@
   gap: var(--spacing-small);
 }
 
+.site-nav-menu a {
+  margin: var(--spacing-small);
+  color:var(--color-text-secondary) ;
+}
+
+.logo-img{
+  width: 300px;
+}
 
 // ===================================
 // HERO
@@ -350,6 +358,14 @@
   line-height: var(--line-height-small);
 }
 
+
+// ===================================
+// FOOTER
+// ===================================
+
+.site-footer{
+  background-color: var(--color-text-primary);
+}
 
 // ===================================
 // RESPONSIVE
