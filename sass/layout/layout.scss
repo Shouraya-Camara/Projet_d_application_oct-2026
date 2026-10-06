@@ -1,4 +1,7 @@
-// ===================================
+@use "../abstracts/variable" as *;
+
+
+// ================LAYOUT===================
 // LAYOUT
 // Header
 // Navigation
@@ -6,12 +9,9 @@
 // Footer
 // Container
 // Grilles
-// ===================================
+// 
 
-
-// ===================================
 // CONTAINER
-// ===================================
 
 .l-container {
   padding: 0 120px 0 120px ;
@@ -19,29 +19,17 @@
 }
 
 
-// ===================================
 // PAGE BIBLIOTHÈQUE DE COMPOSANTS
-// ===================================
 
 .l-components-page {
   padding-block: var(--spacing-major);
   background-color: var(--color-background-page);
 }
 
-.l-components-intro {
-  margin-bottom: var(--spacing-major);
-}
-
-.l-components-eyebrow {
-  color: var(--color-action-primary);
-  font-size: var(--font-size-small);
-  line-height: var(--line-height-small);
-}
 
 
-// ===================================
+
 // HEADER
-// ===================================
 
 .l-header-inner {
   display: flex;
@@ -65,9 +53,7 @@
   width: 300px;
 }
 
-// ===================================
 // HERO
-// ===================================
 
 .l-components-hero {
   padding-block: var(--spacing-major);
@@ -87,9 +73,7 @@
 }
 
 
-// ===================================
 // NAVIGATION DE LA BIBLIOTHÈQUE
-// ===================================
 
 .l-components-nav {
   display: flex;
@@ -113,9 +97,7 @@
 }
 
 
-// ===================================
 // SECTIONS
-// ===================================
 
 .l-components-section {
   padding-block: var(--spacing-major);
@@ -137,9 +119,7 @@
 }
 
 
-// ===================================
 // ORGANISATION DES COMPOSANTS
-// ===================================
 
 .l-component-row {
   display: grid;
@@ -174,9 +154,7 @@
 }
 
 
-// ===================================
 // JETONS / COULEURS
-// ===================================
 
 .l-token-grid {
   display: grid;
@@ -188,6 +166,10 @@
 
 .l-token-color {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-small);
 
   h3 {
     margin-top: var(--spacing-small);
@@ -204,9 +186,7 @@
 }
 
 
-// ===================================
 // TYPOGRAPHIE
-// ===================================
 
 .l-type-examples {
   display: grid;
@@ -257,9 +237,7 @@
 }
 
 
-// ===================================
 // ESPACEMENTS
-// ===================================
 
 .l-spacing-examples {
   display: flex;
@@ -311,9 +289,7 @@
 }
 
 
-// ===================================
 // CARTES
-// ===================================
 
 .l-card-grid {
   display: grid;
@@ -330,9 +306,7 @@
 }
 
 
-// ===================================
 // CARTE HORIZONTALE
-// ===================================
 
 .artist-card-horizontal {
   display: grid;
@@ -346,9 +320,7 @@
 }
 
 
-// ===================================
 // LÉGENDES
-// ===================================
 
 .l-component-caption {
   margin-top: var(--spacing-small);
@@ -359,17 +331,13 @@
 }
 
 
-// ===================================
 // FOOTER
-// ===================================
 
 .site-footer{
   background-color: var(--color-text-primary);
 }
 
-// ===================================
 // RESPONSIVE
-// ===================================
 
 @media (max-width: 768px) {
 
@@ -412,3 +380,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+  
+@media (max-width: $breakpoint-tablet) {
+    
+  }
